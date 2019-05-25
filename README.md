@@ -19,7 +19,6 @@ This code follows Black code style and is PEP8 compliant.
 > pip3 install -r requirements.txt
 
 ### Usage 
-> python3 git_checker -i /path/to/file.txt
+> python3 git_checker.py -i /path/to/file.txt
 
-usage: git_checker.py [-h] [-i INPUT]
 

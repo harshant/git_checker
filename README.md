@@ -23,6 +23,3 @@ This code follows Black code style and is PEP8 compliant.
 
 usage: git_checker.py [-h] [-i INPUT]
 
-optional arguments:
-  -h, --help                    show this help message and exit
-  -i INPUT, --input INPUT       Input a relative file path containing list of domain names

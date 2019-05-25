@@ -1,4 +1,4 @@
-<h4 align="center">Tool to check accessibility of .git file</h4>
+<h4 align="center">Tool to check .git misconfiguration</h4>
 
 <p align="center">
   <a>

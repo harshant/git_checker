@@ -1,4 +1,0 @@
-
-grofers.com
-https://google.com
-localhost:8000/

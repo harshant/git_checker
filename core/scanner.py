@@ -39,6 +39,11 @@ git_paths = [
 
 
 class Scan:
+    """Main class where all the scanner logic resides
+
+       Uses multithreading to speed up lookups
+    """
+
     def __init__(self, args_obj, base_path):
         self.arg_obj = args_obj
         self.base_path = base_path
@@ -59,11 +64,13 @@ class Scan:
                         self.scan("http://" + domain)
 
     def scan(self, domain):
+        # Main function
         self.domain = domain
         self.check = True
 
         if self.domain.endswith("/"):
             self.domain = self.domain[:-1]  # removing trailing "/" if any
+
         print(colors.info + "Checking : " + self.domain)
 
         for self.path in git_paths:
@@ -79,6 +86,7 @@ class Scan:
         )
 
     def create_thread(self, domain, path):
+        # Creates seperate thread for each request
         self.domain = domain
         self.path = path
         self.process = Thread(target=self.requester, args=[self.domain, self.path])
@@ -86,6 +94,8 @@ class Scan:
         self.threads.append(self.process)
 
     def requester(self, domain, path):
+        # Makes request to the endpoint and checks
+        # if response code is 200
         self.domain = domain
         self.path = path
         try:

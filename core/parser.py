@@ -3,6 +3,10 @@ import sys
 
 
 class ArgumentParser(object):
+    """A simple class to initialize argparse
+       and define inputs to be accepted
+    """
+
     def __init__(self):
         if len(sys.argv) < 2:
             print("For Usage info : python3 git_extractor.py -h")

@@ -11,8 +11,7 @@
 <img src="https://i.ibb.co/t3TFLxq/git-checker.png" alt="git-checker" border="0"></a>
 </p>
 
-
-This tool is one of the two challenges of grofers hiring process, emphasis is given on structuring of this project and code style.
+Emphasis is given on structuring of this project and code style.
 This code follows Black code style and is PEP8 compliant.
 
 ### Installing Requirements
